@@ -9,35 +9,43 @@
     <style type="text/css">
         html {
             width: 960px;
-            height: 1357px;
+            /*height: 1242px;*/
             margin: 0 auto;
             font-family: 'century gothic';
-            border: 1px solid #333;
+            /*border: 1px solid #333;*/
             color: #333;
         }
         body {
-            padding: 40px 0;
+            padding: 20px 0;
+            margin: 0;
         }
         .header > * {
             display: inline-block;
         }
-        .name-wrapper {
-            padding-left: 40px;
-            width: 525px;
+        .col-left {
+            margin-left: 80px;
+            width: 520px;
+            display: inline-block;
+        }
+        .col-left > * {
+            display: inline-block;
+        }
+        .col-right {
+/*            padding: 0 40px 0 35px;*/
+            width: 325px;
+            display: inline-block;
         }
         .info-wrapper {
-            padding: 0 40px 0 35px;
-            width: 300px;
-            font-size: 24px;
+            font-size: 22px;
         }
         .name {
-            font-size: 160px;
+            font-size: 100px;
             font-weight: 400;
             line-height: 0.9;
         }
         .title {
-            margin-left: 10px;
-            font-size: 37px;
+            margin-left: 4px;
+            font-size: 30px;
         }
         .info {
             margin-top: 5px;
@@ -46,21 +54,79 @@
         .info .icon {
             margin: 0 10px;
         }
+        .body-section {
+            font-size: 18px;
+        }
+        .body-section > ul {
+            margin: 0 50px;
+        }
+        h2 {
+            background-color: #2980b9;
+            color: #fff;
+            width: 470px;
+            font-weight: normal;
+            font-size: 32px;
+            padding-left: 90px;
+            line-height: 55px;
+        }
+        .skill-con {
+            margin: 0 90px 15px 90px;
+        }
+        h5 {
+            font-size: 18px;
+            width: 200px;
+            display: inline-block;
+            margin: 0;
+        }
+        .skill-dscp {
+            display: inline-block;
+            vertical-align: top;
+            width: 570px;
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="name-wrapper">
-            <div class="name"><b>eric</b>lin</div>
-            <div class="title">3B Software Engineering</div>
+        <div class="col-left">
+            <img src="face_ps3.jpg" style="height: 125px;">
+            <div>
+                <div class="name"><b>ERIC</b>LIN</div>
+                <div class="title">3B Software Engineering</div>
+            </div>
         </div>
-        <div class="info-wrapper">
-            <div class="info"><i class="fa fa-github icon"></i>me@ericlin15.com</div>
-            <div class="info"><i class="fa fa-github icon"></i>ericlin15.com</div>
+        <div class="col-right info-wrapper">
+            <div class="info"><i class="fa fa-envelope-o icon" style="margin-left: 8px;"></i>me@ericlin15.com</div>
+            <div class="info"><i class="fa fa-globe icon"></i>ericlin15.com</div>
             <div class="info"><i class="fa fa-github icon"></i>github.com/tinyjing</div>
-            <div class="info"><i class="fa fa-github icon"></i>519-807-6091</div>
+            <div class="info"><i class="fa fa-phone icon"></i>519-807-6091</div>
         </div>
+    </div>
+    <div class="body-section">
+        <h2>Skills Summary</h2>
+        <div class="skill-con">
+            <h5>Programming<br>languages</h5>
+            <div class="skill-dscp">JavaScript, Java, Python, C++ and Groovy Script</div>
+        </div>
+        <div class="skill-con">
+            <h5>Frontend web technologies</h5>
+            <div class="skill-dscp">Extensive knowledge with HTML, CSS, Angular, Underscore, Backbone, Express, Bootstrap, LESS, JQuery, Grunt, Jekyll, Jasmine and Karma</div>
+        </div>
+        <div class="skill-con">
+            <h5>Backend<br>development</h5>
+            <div class="skill-dscp">Experience with Node.js, Socket.io and MongoDB. Familiar with Spring, Django, Relational database and RESTful APIs implementation. </div>
+        </div>
+        <div class="skill-con">
+            <h5>Agile methodology</h5>
+            <div class="skill-dscp">Knowledge gained through different work terms. Good understanding of software development life cycle</div>
+        </div>
+        <div class="skill-con">
+            <h5>Source control</h5>
+            <div class="skill-dscp">Frequent use of Git. Experience with SVN and Mercurial</div>
+        </div>
+    </div>
+    <div class="body-section">
+        <h2>Work Experience</h2>
     </div>
 </body>
 </html>
